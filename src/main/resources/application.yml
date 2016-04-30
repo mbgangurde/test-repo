@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: mis-communication-service
+    version: 2.0
+  datasource:
+    driverClassName: oracle.jdbc.driver.OracleDriver
+    #url: jdbc:oracle:thin:@//192.168.100.100:1521/nwi
+    #username: mis_kopie
+    #password: mis_kopie
+    url: jdbc:oracle:thin:@//localhost:1521/xe
+    username: mis_db
+    password: mis_db
+server:
+  port: 75
+
+mail:
+  smtp:
+    host: smtp.gmail.com
+    port: 465
+    user: Mukesh
+    email: m.gangurde@maxxton.com 
+    password: Test
+    starttls:
+      enable: true
+    debug: true
+    auth: true
+    socketFactory:
+      port: 465
+      class: javax.net.ssl.SSLSocketFactory
+      fallback: false
+  transport:
+    protocol: smtps  
+
